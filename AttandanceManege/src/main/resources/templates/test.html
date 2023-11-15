@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th><th>begin_time</th><th>end_time</th>
+    </tr>
+    <tr th:each="test : ${test}">
+        <td th:text="${test.get('id')}"></td>
+        <td th:text="${test.get('begin_time')}"></td>
+        <td th:text="${test.get('end_time')}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
